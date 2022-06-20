@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,900;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+#alert {
+  border-radius: 5px;
+  padding: .3rem;
+  font-size: 1.1rem;
+}
+
+body {
+  background: #f3f5f8;
+  font-family: 'poppins', sans-serif;
+}
+
+body .header-container {
+  height: 50px;
+  background: #5255ec;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-shadow: 0px 0px 4px 1px #333;
+}
+
+body .header-container #logo {
+  color: #fff;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #333;
+}
+
+body .header-container div {
+  display: flex;
+}
+
+body .header-container div a {
+  margin: 10px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  text-shadow: 2px 2px #333;
+}
+
+body .Todolist-container {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  gap: 10px;
+}
+
+body .Todolist-container .form-container {
+  background: #97e5ff;
+  max-width: 600px;
+  width: 90%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.task-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-label #date-container {
+  display: flex;
+  gap: 3px;
+}
+
+.task-label #date-container input {
+  width: 100px;
+  padding: 2px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-family: inherit;
+  font-size: .9rem;
+}
+
+.text-container {
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.text-container #display {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: inherit;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  transition: all 200ms ease-in;
+}
+
+.text-container #display:focus {
+  background: #eaf962;
+  color: #333;
+}
+
+#display-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+}
+
+#display-container #save-btn {
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.3rem;
+  border: 2px solid transparent;
+  outline: 2px solid transparent;
+  transition: all 200ms ease-in;
+  border-radius: 4px;
+  background: #fff;
+  font-family: inherit;
+}
+
+#display-container #save-btn:hover {
+  outline: 2px solid blue;
+  transform: scale(1.1);
+}
+
+#display-container #save-btn:focus {
+  outline: 2px solid transparent;
+  transform: scale(0.9);
+}
+
+.task-display-container {
+  width: 90%;
+  max-width: 600px;
+}
+
+.task-display-container .task-title-box {
+  background: #5255ec;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.task-display-table {
+  background: #97e5ff;
+  border-radius: 10px;
+  /* padding: 0.5rem; */
+}
+
+.task-display-table ul {
+  padding-left: 2rem;
+}
+
+.task-display-table ul li {
+  padding: .5rem;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+.task-display-table ul li button {
+  position: absolute;
+  right: 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+
+.task-display-table ul li button:hover {
+  transform: scale(1.1);
+}
+
+.task-display-table ul li button:focus {
+  transform: scale(0.9);
+}
